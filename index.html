@@ -3,65 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Situs Web Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="header">
-        <div class="header-logo">
-            Progate
-        </div>
-        <div class="header-list">
-            <ul>
-                <li>Tentang</li>
-                <li>Pelajaran</li>
-                <li>Hubungi Kami</li>
-            </ul>
-        </div>
+    <header>
+        <h1>Selamat Datang di Situs Web Pribadi Saya</h1>
+    </header>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#pendidikan">PENDIDIKAN</a>
+        <a href="#jadwal-kuliah">JADWAL KULIAH</a>
+        <a href="#aktivitas">AKTIVITAS</a>
+        <a href="#informasi-lain">Informasi Lain</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>HOME</h2>
+            <p>Nama            : Natasya Thalia Salsabillah</p>
+            <p>NIM             : 210601110080</p>
+            <p>Program Studi   : Matematika</p>
+        </section>
+        <section id="pendidikan">
+            <h2>PENDIDIKAN</h2>
+            <p>SD SIDRAP LUAR Bontang (2009-2015)</p>
+            <p>SMP Negeri 4 Bontang Barat (2015-2018)</p>
+            <p>SMA Negeri 1 Sumberpucung Malang (2018-2021)</p>
+            <p>Universitas Islam Negeri Maulana Malik Ibrahim Malang</p>
+        </section>
+        <section id="jadwal-kuliah">
+            <h2>JADWAL KULIAH</h2>
+            <!-- Tabel jadwal kuliah bisa Anda tambahkan di sini -->
+            <head>
+                <br> <title>Pengaturan Table Spec</title>
+                <link rel="stylesheet" type="text/css" href="Tugas 2 PPK II.css">
+            </head>
+            <body>
+                <table width="468" border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th width="15">No.</th>
+                        <th width="91">Hari</th>
+                        <th width="96">Pukul</th>
+                        <th width="137">Mata Kuliah</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Senin</td>
+                        <td>06.30 - 08.10</td>
+                        <td>Pemodelan Matematika</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Selasa</td>
+                        <td>06.30 - 09.00</td>
+                        <td>Analisis Numerik I</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Selasa</td>
+                        <td>09.00 - 10.40</td>
+                        <td>Praktikum Pemrograman Komputer II</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Rabu</td>
+                        <td>06.30 - 09.00</td>
+                        <td>Statistika Matematika</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Rabu</td>
+                        <td>12.20 - 14.50</td>
+                        <td>Analisis Kompleks</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Kamis</td>
+                        <td>06.30 - 08.10</td>
+                        <td>Pemrogram Komputer II</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Kamis</td>
+                        <td>09.00 - 10.40</td>
+                        <td>Praktikum Pemodelan Matematika</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Kamis</td>
+                        <td>14.00 - 15.40</td>
+                        <td>Kapita Selekta Aljabar</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>Jumat</td>
+                        <td>06.30 - 09.00</td>
+                        <td>Geometri Analitik</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>Jumat</td>
+                        <td>09.50 - 11.30</td>
+                        <td>Aljabar Linier Lanjut</td>
+                    </tr>
+                </table>
+        </section>
+        <section id="aktivitas">
+            <h2>AKTIVITAS</h2>
+            <p> - Panitia PBAK-F (Sie Konsumsi)</p>
+            <p> - Panitia Duta Saintek (Sie Akomod)</p>
+            <p> - Panitia Komet XXII (Sie Data Administrasi Office)</p>
+            <p> - HMPS "Integral" Matematika Tahun 2023 (Divisi Kewirausahaan)</p>
+            <p> - Panitia Komet XXIII (Sie Data Administrasi Office)</p>
+            <p> - Sekretaris Rapat Kerja HMPS "Integral" Matematika Tahun 2023</p>
+            <p> - Panitia Workshop Kewirausahaan (Kesekretariatan)</p>
+            <p> - Panitia Integral Berdialektika (Sie Akomod)</p>
+            <p> - Panitia Sigma Tahun 2023 (Sie Pendamping)</p>
+            <p> - Panitia IFest (Sie Relation and Sponsorship)</p>
+        </section>
+        <section id="informasi-lain">
+            <h2>Informasi Lain</h2>
+            <p>Tambahkan informasi lain untuk menambah nilai saya.</p>
+        </section>
     </div>
-    <h1>Tugas Membuat Website</h1>
-    <p>Pemrograman Komputer II</p>
-    <form action="/proses-data" method="POST">
-        <label for="Nama">First Name:</label><br>
-        <input type="text" id="fname" name="fname" value="Natasya Thalia"><br><br>
-
-        <label for="Nama">Last Name:</label><br>
-        <input type="text" id="nama" name="nama" value="Salsabillah"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" value="belanatasya9@gmail.com"><br><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-
-        <p>Gender</p>
-        <input type="radio" id="Man" name="Gender" value="Man">
-        <label for="Man">Man</label>
-        <input type="radio" id="Woman" name="Gender" value="Woman">
-        <label for="Woman">Woman</label><br><br>
-
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br><br>
-
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" value="Kepanjen-Malang"><br><br>
-
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-            <option value="Indonesia">Indonesia</option>
-            <option value="Korea">Korea</option>
-            <option value="Singapura">Singapura</option>
-            <option value="New York">New York</option>
-        </select><br><br>
-
-        <label for="photo">Upload Photo:</label>
-        <input type="file" id="photo" name="photo"><br><br>
-
-        <label for="textarea">Description:</label>
-        <textarea name="message" rows="4" cols="40"></textarea><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
 </body>
 </html>
